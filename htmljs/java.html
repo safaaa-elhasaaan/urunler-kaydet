@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   <style>
+   </style>
+</head>
+<body>
+  <div class="crud">
+<div class="head">
+<h1>crud</h1>
+<p>product management system</p>
+</div>
+<div class="input">
+  <input id="text" type="text" placeholder="text">
+  <div class="contet">
+    <input onkeyup=" get()" type="namber" id="price" placeholder="price">
+    <input onkeyup=" get()" type="namber" id="taxos" placeholder="taxos">
+    <input onkeyup=" get()" type="namber" id="ads" placeholder="ads">
+    <input onkeyup=" get()" type="namber" id="disoount" placeholder="disoount">
+    <small onkeyup=" get()" id="total"></small>
+  </div>
+  <input type="number" id="cont"  placeholder="count">
+  <input type="text" id="cata" placeholder="category">
+  <button id="btn">create</button>
+  </div>
+
+<div class="output">
+  <input  onkeyup="datasrearch(this.value)"type="text" id="ser" placeholder="search">
+  <div class="search">
+  <button onclick="searchdata(this.id)" id="search1">search by title</button>
+  <button onclick="searchdata(this.id)" id="search2">search by category</button>    
+  </div>
+  <div id="deletall">
+
+  </div>
+<table>
+  <tr>
+  <th>id</th>
+  <th>titel</th>
+  <th>price</th>
+  <th>taxes</th>
+  <th>ads</th>
+  <th>discount</th>
+  <th>total</th>
+  <th>category</th>
+  <th>update</th>
+  <th>delete</th>
+  
+</tr>
+  <tbody id="tbody">
+   
+  </tbody>
+</table>
+</div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
